@@ -1,0 +1,136 @@
+:root {
+    --fs56: 56px;
+    --fs36: 36px;
+    --fs24: 24px;
+    --fs26: 26px;
+    --fs20: 20px;
+    --fs16: 16px;
+    --fs14: 14px;
+    --fs12: 12px;
+    --fs32: 32px;
+    --fs18: 18px;
+    --p100: 100px;
+    --mb40: 40px;
+}
+
+.py100 {
+    padding-top: var(--p100);
+    padding-bottom: var(--p100);
+}
+
+.pt100 {
+    padding-top: var(--p100);
+}
+
+.pb100 {
+    padding-bottom: var(--p100);
+}
+
+.mb40 {
+    margin-bottom: var(--mb40);
+}
+
+h1 {
+    font-size: var(--fs56);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: var(--fs36);
+    line-height: 1.2;
+    font-weight: 600;
+    color: $primary;
+}
+
+p {
+    font-size: var(--fs16);
+    line-height: 1.4;
+    font-weight: 400;
+    color: $greyText;
+}
+
+
+
+@media screen and (max-width: 1680px) {
+    :root {
+        --fs56: 54px;
+        --fs36: 35px;
+        --fs32: 30px;
+
+    }
+}
+
+@media screen and (max-width: 1560px) {
+    :root {
+        --fs56: 50px;
+        --fs36: 33px;
+        --p100:80px;
+        --mb40: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 1470px) {
+    :root {
+        --fs56: 49px;
+        --fs36: 31px;
+        --fs16: 15px;
+    }
+}
+
+
+/* Media queries to adjust values based on screen size */
+@media (max-width: 1370px) {
+    :root {
+        --fs56: 46px;
+        --fs36: 30px;
+        --fs24: 22px;
+        --fs32: 30px;
+        --fs16: 15px;
+        --p100:60px;
+
+    }
+
+}
+
+// Ipad pro 
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    :root {
+        --fs24: 20px;
+        --fs32: 28px;
+        --fs18: 17px;
+        --fs36: 24px;
+    }
+}
+
+//  ipad 
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+    :root {
+        --fs24: 17px;
+        --fs56: 40px;
+        --fs36: 30px;
+    }
+}
+
+//  mobile 
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    :root {
+        --fs14: 12px;
+        --fs56: 30px;
+        --fs24: 18px;
+        --fs16: 14px;
+        --fs32: 24px;
+        ;
+        --fs20: 18px;
+        --fs18: 16px;
+        --p100:50px;
+        --mb40: 20px;
+    }
+}

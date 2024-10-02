@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: $mainFonts;
+    color: $greyText;
+    font-size: var(--fs16);
+}
+::before, ::after {
+    border-width: 0;
+
+}
+body,
+html {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+// a:focus-visible {
+//     outline: none;
+// }
+
+input:focus-visible {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.accordion-button {
+    background-color: unset !important;
+
+    &:focus-visible {
+        outline: none;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: unset;
+}
+
+.accordion-item {
+    background-color: unset;
+    border: 0;
+    border-radius: 0;
+}
+
+.nav {
+    &.nav-tabs {
+        border: 0;
+
+        .nav-link {
+            border: 0;
+            color: inherit;
+            padding: 0;
+            &.active{
+                outline: none;
+                border: 0;
+            }
+        }
+    }
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+.slick-slider {
+    margin: 0px;
+}
+
+.flex_align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_bt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 88% !important;
+    width: 100% !important; 
+    height: 100% !important;
+}
+
+.fw700 {
+    font-weight: 700 !important;
+}
+
+.fw600 {
+    font-weight: 600 !important;
+}
+
+.fw500 {
+    font-weight: 500 !important;
+}
+
+.fw400 {
+    font-weight: 400 !important;
+}
+
+.fw300 {
+    font-weight: 300 !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide overflow during loader display */
+  }
+  
+  /* Loader container */
+  #loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Background color for loader */
+    z-index: 1000; /* Make sure loader is on top of other elements */
+  }
+  
+  /* Circles for the loader animation */
+  .mesh-loader .circle {
+    width: 20px;
+    height: 20px;
+    background: $primary; /* Replace with your desired color variable or value */
+    border-radius: 50%;
+    margin: 5px;
+    animation: mesh 1.5s ease-in-out infinite;
+  }
+  
+  /* First set of circles */
+  .set-one .circle:nth-child(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  
+  .set-one .circle:nth-child(2) {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+  
+  /* Second set of circles */
+  .set-two .circle:nth-child(1) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .set-two .circle:nth-child(2) {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes mesh {
+    0%, 100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  @-webkit-keyframes mesh {
+    0%, 100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Align sets horizontally */
+  .set-one, .set-two {
+    display: flex;
+  }
+  
+  #content {
+    display: none; /* Initially hidden */
+    opacity: 0; /* Start with transparent */
+    transition: opacity 1s ease; /* Fade-in transition */
+  }
+  
+  .fade-in {
+    display: block; /* Make it block-level after fade-in */
+    opacity: 1; /* Fully visible */
+  }
+  
+  
