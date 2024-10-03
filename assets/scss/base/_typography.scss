@@ -115,6 +115,7 @@ p {
         --fs24: 17px;
         --fs56: 40px;
         --fs36: 30px;
+        --fs26: 24px;
     }
 }
 
@@ -122,6 +123,7 @@ p {
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     :root {
+        --fs26: 20px;
         --fs14: 12px;
         --fs56: 30px;
         --fs36: 22px;
