@@ -2339,9 +2339,15 @@ p {
 }
 
 .CommercialSec.AboutUs {
-  background: url(../img/Air-2.jpg) !important;
+  background: url(../img/about_us.jpeg) !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  background-size: cover !important;
+}
+
+.CommercialSec.Faq {
+  background: url(../img/Factory-2.jpg) !important;
+  background-repeat: no-repeat !important;
   background-size: cover !important;
 }
 
@@ -2399,6 +2405,12 @@ p {
   color: #3a3a3a;
 }
 
+.CommercialSec.contact {
+  background: url(../img/contact-us.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
 .WorkigHrs .InnerWorkingHrs {
   flex-wrap: wrap;
   align-items: center;
@@ -2439,6 +2451,12 @@ p {
   font-size: var(--fs16);
 }
 
+.CommercialSec.career {
+  background: url(../img/Website_Slider_Images4.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
 .CareerSec .container {
   max-width: 1000px !important;
   margin-left: auto;
@@ -2465,6 +2483,31 @@ p {
 }
 .CareerSec .RequestQuote.career .tab-content .MainBtn {
   margin-top: 30px;
+}
+
+.CommercialSec.Materials {
+  background: url(../img/IndustryMetalsIMG.jpg);
+}
+
+.MaterialSec .InnerMaterial {
+  flex-wrap: wrap;
+}
+.MaterialSec .material50 {
+  width: calc(50% - 20px);
+}
+.MaterialSec .contentMaterail h4 {
+  color: #003346;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: var(--fs16);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.MaterialSec .contentMaterail h2 {
+  padding-bottom: 20px;
+}
+.MaterialSec .contentMaterail p {
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1680px) {

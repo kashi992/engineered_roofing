@@ -1,0 +1,27 @@
+.CommercialSec.Materials{
+background: url(../img/IndustryMetalsIMG.jpg);
+}
+.MaterialSec{
+    .InnerMaterial{
+        flex-wrap: wrap;
+    }
+    .material50{
+        width: calc(50% - 20px);
+    }
+   .contentMaterail{
+    h4{
+        color: $secondaryBlack;
+        text-transform: uppercase;
+        line-height: 1.2;
+        font-size: var(--fs16);
+        font-weight: 600;
+        padding-bottom: 20px;
+    }
+    h2{
+        padding-bottom: 20px;
+    }
+    p{
+        padding-bottom: 10px;
+    }
+   }
+}
