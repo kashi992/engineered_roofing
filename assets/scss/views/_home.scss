@@ -350,6 +350,9 @@
                 color: $secondaryBlack;
                 line-height: 1.2;
                 font-size: var(--fs16);
+                &.active{
+                    color: $primary;
+                }
             }
 
             .tentcamp {
@@ -624,6 +627,7 @@
             h2 {
                 color: $secondaryBlack;
                 padding: 10px 0px;
+                text-align: start;
             }
 
             h3 {
@@ -632,6 +636,7 @@
                 font-weight: 500;
                 font-size: var(--fs24);
                 padding-bottom: 20px;
+               
             }
 
             .boxIcon {

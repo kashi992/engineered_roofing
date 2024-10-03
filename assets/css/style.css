@@ -677,6 +677,9 @@ p {
   line-height: 1.2;
   font-size: var(--fs16);
 }
+.mainNavbar .navbar-nav .nav-item .DwonArrowNav.active {
+  color: #71CADA;
+}
 .mainNavbar .navbar-nav .nav-item .tentcamp {
   height: 40px;
   width: 40px;
@@ -894,6 +897,7 @@ p {
 .AboutSection .InnerAboutSec .ContentAbout h2 {
   color: #003346;
   padding: 10px 0px;
+  text-align: start;
 }
 .AboutSection .InnerAboutSec .ContentAbout h3 {
   color: #71CADA;
@@ -2681,6 +2685,9 @@ p {
     font-size: var(--fs14);
     color: #003346;
     line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 0px 5px;
   }
   .mainNavbar .navbar-nav .nav-item .nav-link {
     justify-content: space-between;
@@ -2706,7 +2713,8 @@ p {
     position: unset;
     box-shadow: unset;
     border: unset;
-    padding: 10px 0px;
+    padding: 10px 0px 0px 5px;
+    width: 100%;
   }
   .mainNavbar .nav-item .dropdownMenu::before {
     display: none;
