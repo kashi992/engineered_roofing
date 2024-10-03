@@ -3,7 +3,10 @@
         position: relative;
         height: 570px;
     }
-
+    .mainNavbar .navbar-brand {
+            height: 80px;
+        
+        }
     .HeroSec .HeroBanner {
         height: calc(100vh - 124px);
     }
@@ -48,12 +51,7 @@
         padding: 35px;
     }
 
-    .HeroSec .HeroBanner {
-        height: calc(100vh - 114px);
-    }
-
     .mainNavbar .navbar-nav {
-        height: 70px;
         max-width: 600px;
     }
 
@@ -106,6 +104,9 @@
 // Ipad pro 
 // `xl` applies to large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
+    .mainNavbar .navbar-brand {
+        height: 70px;
+    }
     .CareerSec .container {
         max-width: 900px !important;
     }
@@ -162,6 +163,7 @@
 
     .mainNavbar .navbar-nav {
         justify-content: center;
+        height: 70px;
     }
 
     .container {
@@ -317,10 +319,6 @@
         height: auto;
     }
 
-    .HeroSec .HeroBanner {
-        height: calc(100vh - 87px);
-    }
-
     .CommeracilSheds .glanceItem .InneerCheckBox {
         padding-bottom: 30px;
     }
@@ -337,10 +335,6 @@
     .navbar-toggler:focus {
         box-shadow: unset;
 
-    }
-
-    .mainNavbar .navbar-brand {
-        width: 45px;
     }
 
     .OurProducts .InnerProductBox .ProductBox {
@@ -613,6 +607,9 @@
 //  mobile 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+    .mainNavbar .navbar-brand {
+        height: 60px;
+    }
     .CareerSec .container {
         max-width: 100% !important;
     }

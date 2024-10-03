@@ -633,7 +633,10 @@ p {
 .mainNavbar .navbar-brand {
   padding: 0px;
   margin: 0px;
-  width: 90px;
+  height: 90px;
+}
+.mainNavbar .navbar-brand img {
+  height: 100%;
 }
 .mainNavbar .navbar-nav {
   margin-left: auto;
@@ -2459,6 +2462,9 @@ p {
     position: relative;
     height: 570px;
   }
+  .mainNavbar .navbar-brand {
+    height: 80px;
+  }
   .HeroSec .HeroBanner {
     height: calc(100vh - 124px);
   }
@@ -2492,11 +2498,7 @@ p {
   .OurProducts .InnerProductBox .ProductCaption {
     padding: 35px;
   }
-  .HeroSec .HeroBanner {
-    height: calc(100vh - 114px);
-  }
   .mainNavbar .navbar-nav {
-    height: 70px;
     max-width: 600px;
   }
   .AboutSection .AboutImg {
@@ -2532,6 +2534,9 @@ p {
   }
 }
 @media (max-width: 1199.98px) {
+  .mainNavbar .navbar-brand {
+    height: 70px;
+  }
   .CareerSec .container {
     max-width: 900px !important;
   }
@@ -2576,6 +2581,7 @@ p {
   }
   .mainNavbar .navbar-nav {
     justify-content: center;
+    height: 70px;
   }
   .container {
     max-width: 95% !important;
@@ -2691,9 +2697,6 @@ p {
   .mainNavbar .navbar-nav {
     height: auto;
   }
-  .HeroSec .HeroBanner {
-    height: calc(100vh - 87px);
-  }
   .CommeracilSheds .glanceItem .InneerCheckBox {
     padding-bottom: 30px;
   }
@@ -2706,9 +2709,6 @@ p {
   }
   .navbar-toggler:focus {
     box-shadow: unset;
-  }
-  .mainNavbar .navbar-brand {
-    width: 45px;
   }
   .OurProducts .InnerProductBox .ProductBox {
     width: 100%;
@@ -2911,6 +2911,9 @@ p {
   }
 }
 @media (max-width: 575.98px) {
+  .mainNavbar .navbar-brand {
+    height: 60px;
+  }
   .CareerSec .container {
     max-width: 100% !important;
   }
