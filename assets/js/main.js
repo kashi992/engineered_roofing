@@ -467,7 +467,7 @@ $(document).ready(function () {
 document.addEventListener('DOMContentLoaded', function () {
     const navbarToggle = document.getElementById('navbarToggle');
     const overlay = document.getElementById('overlay');
-    const body = document.body;
+    const html = document.documentElement; // Reference to the HTML element
     const closeOverlay = document.getElementById('closeOverlay');
 
     navbarToggle.addEventListener('click', function () {
@@ -476,13 +476,13 @@ document.addEventListener('DOMContentLoaded', function () {
         // Toggle the 'show' class
         navbarContent.classList.toggle('show');
 
-        // Toggle overlay and body overflow
+        // Toggle overlay and html overflow
         if (navbarContent.classList.contains('show')) {
             overlay.classList.add('active');
-            body.classList.add('overflow-hidden');
+            html.classList.add('overflow-hidden'); // Add class to html
         } else {
             overlay.classList.remove('active');
-            body.classList.remove('overflow-hidden');
+            html.classList.remove('overflow-hidden'); // Remove class from html
         }
     });
 
@@ -491,7 +491,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const navbarContent = document.getElementById('navbarSupportedContent');
         navbarContent.classList.remove('show');
         overlay.classList.remove('active');
-        body.classList.remove('overflow-hidden');
+        html.classList.remove('overflow-hidden'); // Remove class from html
     });
 
     // Close overlay when the overlay is clicked
@@ -499,9 +499,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const navbarContent = document.getElementById('navbarSupportedContent');
         navbarContent.classList.remove('show');
         overlay.classList.remove('active');
-        body.classList.remove('overflow-hidden');
+        html.classList.remove('overflow-hidden'); // Remove class from html
     });
 });
+
 
 
 

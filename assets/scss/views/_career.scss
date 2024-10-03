@@ -1,0 +1,31 @@
+.CareerSec{
+    .container{
+        max-width: 1000px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2{
+        text-align: center;
+        text-transform:capitalize;
+    }
+    p{
+        text-align: center;
+        padding-bottom: 10px;
+        &:last-of-type{
+            padding-bottom: 0px;
+        }
+
+    }
+    .RequestQuote.career{
+        padding-top: 40px;
+        padding-bottom: 0px;
+        .tab-content{
+            padding: 0px;
+            border: unset;
+            .MainBtn{
+                margin-top: 30px;
+            }
+        }
+
+    }
+}

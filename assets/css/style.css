@@ -383,43 +383,29 @@ p {
     --mb40: 20px;
   }
 }
-body.overflow-hidden {
-  overflow: hidden;
-  /* Hide body overflow */
-}
-
 .overlay {
   display: none;
-  /* Initially hidden */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  /* Semi-transparent background */
-  z-index: 1;
-  /* Make sure it covers everything */
-}
-
-.is-invalid {
-  border-color: #dc3545;
-  /* Red color for errors */
+  z-index: 5;
 }
 
 .close-icon {
   position: absolute;
   top: 8px;
   right: 15px;
-  font-size: 50px;
-  color: white;
-  z-index: 10;
+  font-size: 36px;
+  color: #003346;
+  line-height: 1;
   cursor: pointer;
 }
 
 .overlay.active {
   display: block;
-  /* Show overlay */
 }
 
 .SubNavbar {
@@ -448,7 +434,7 @@ body.overflow-hidden {
 
 .MainNavbarFixed.FixedNavbar {
   position: fixed;
-  z-index: 999;
+  z-index: 9;
   width: 100%;
   background-color: #FFF;
   animation: navTop 0.6s ease;
@@ -647,6 +633,7 @@ body.overflow-hidden {
 .mainNavbar .navbar-brand {
   padding: 0px;
   margin: 0px;
+  width: 90px;
 }
 .mainNavbar .navbar-nav {
   margin-left: auto;
@@ -699,6 +686,9 @@ body.overflow-hidden {
   display: flex;
   gap: 0px 10px;
   align-items: center;
+}
+.mainNavbar .navbar-nav .nav-item .nav-link.active {
+  color: #71CADA;
 }
 .mainNavbar .navbar-nav .nav-item .nav-link.active {
   color: #71CADA;
@@ -2436,6 +2426,34 @@ body.overflow-hidden {
   font-size: var(--fs16);
 }
 
+.CareerSec .container {
+  max-width: 1000px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.CareerSec h2 {
+  text-align: center;
+  text-transform: capitalize;
+}
+.CareerSec p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.CareerSec p:last-of-type {
+  padding-bottom: 0px;
+}
+.CareerSec .RequestQuote.career {
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+.CareerSec .RequestQuote.career .tab-content {
+  padding: 0px;
+  border: unset;
+}
+.CareerSec .RequestQuote.career .tab-content .MainBtn {
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 1680px) {
   .AboutSection .AboutImg {
     position: relative;
@@ -2447,9 +2465,6 @@ body.overflow-hidden {
   .mainNavbar .navbar-nav {
     height: 80px;
     max-width: 640px;
-  }
-  .mainNavbar .navbar-brand {
-    width: 185px;
   }
   .logoSlider .logoImg {
     height: 150px;
@@ -2484,9 +2499,6 @@ body.overflow-hidden {
     height: 70px;
     max-width: 600px;
   }
-  .mainNavbar .navbar-brand {
-    width: 160px;
-  }
   .AboutSection .AboutImg {
     height: 440px;
   }
@@ -2520,6 +2532,9 @@ body.overflow-hidden {
   }
 }
 @media (max-width: 1199.98px) {
+  .CareerSec .container {
+    max-width: 900px !important;
+  }
   .InneerCheckBox .CoreCheckBox {
     width: 25px;
   }
@@ -2551,9 +2566,6 @@ body.overflow-hidden {
   .mainNavbar .navbar-nav .nav-item {
     padding: 0px 10px;
     margin: 0;
-  }
-  .navbar-brand {
-    width: 150px;
   }
   .mainNavbar .navbar-nav .nav-item .nav-link {
     font-size: var(--fs14);
@@ -2613,6 +2625,9 @@ body.overflow-hidden {
   }
 }
 @media (max-width: 991.98px) {
+  .CareerSec .container {
+    max-width: 600px !important;
+  }
   .nav-item .dropdownMenu {
     opacity: 1 !important;
   }
@@ -2632,6 +2647,17 @@ body.overflow-hidden {
   }
   .nav-item.active .nav-link .DwonArrowNav {
     transform: rotate(180deg) !important;
+  }
+  .mainNavbar .dropdown-item:last-of-type {
+    padding-bottom: 0px;
+  }
+  .nav-item.hasDrop .dropdownMenu .dropdown-item {
+    border-bottom: unset;
+  }
+  .nav-item.hasDrop .dropdownMenu .dropdown-item a {
+    font-size: var(--fs14);
+    color: #003346;
+    line-height: 1.2;
   }
   .mainNavbar .navbar-nav .nav-item .nav-link {
     justify-content: space-between;
@@ -2682,7 +2708,7 @@ body.overflow-hidden {
     box-shadow: unset;
   }
   .mainNavbar .navbar-brand {
-    width: 140px;
+    width: 45px;
   }
   .OurProducts .InnerProductBox .ProductBox {
     width: 100%;
@@ -2810,9 +2836,6 @@ body.overflow-hidden {
     flex-direction: column;
     background-color: white;
   }
-  .CommercialSec {
-    padding: 75px 0px;
-  }
   .OurTeams .InnerTeams .TeamsCard .TeamsCardImg {
     max-width: 180px;
   }
@@ -2888,6 +2911,12 @@ body.overflow-hidden {
   }
 }
 @media (max-width: 575.98px) {
+  .CareerSec .container {
+    max-width: 100% !important;
+  }
+  .CareerSec .RequestQuote.career {
+    padding-top: 25px;
+  }
   .AboutSection .InnerAboutSec .ContentAbout .InnerlistItem {
     gap: 15px;
   }
@@ -2960,12 +2989,6 @@ body.overflow-hidden {
   }
   .OurProducts .InnerProductBox {
     padding-top: 30px;
-  }
-  .HeroSec .HeroBanner {
-    height: calc(90vh - 134px);
-  }
-  .mainNavbar .navbar {
-    height: 60px;
   }
   .FaqSec .accordion-button img {
     width: 20px;
@@ -3053,6 +3076,8 @@ body.overflow-hidden {
   }
   .AboutSection.CoreFeaturs .AboutImg.ChoseBox {
     flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
   }
   .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox:last-of-type {
     padding-top: 0px;
@@ -3072,9 +3097,6 @@ body.overflow-hidden {
     padding-bottom: 15px;
   }
   .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox {
-    gap: 15px;
-  }
-  .AboutSection.CoreFeaturs .AboutImg.ChoseBox {
     gap: 15px;
   }
   .AboutSection.CoreFeaturs .ContentAbout p {

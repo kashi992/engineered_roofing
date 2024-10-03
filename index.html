@@ -37,18 +37,22 @@
                 </div>
             </div>
         </div>
+        <div class="overlay" id="overlay">
+          
+        </div>
         <div class="MainNavbarFixed">
             <nav class="navbar navbar-expand-lg shadow">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/images.png" alt=""></a>
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/mainLogo.jpeg" alt=""></a>
                     <button class="navbar-toggler" type="button" id="navbarToggle" aria-expanded="false"
                         aria-controls="navbarSupportedContent">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav  mb-2 mb-lg-0">
+                            <span class="close-icon d-lg-none d-block" id="closeOverlay">&times;</span>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html" role="button" aria-expanded="false">
+                                <a class="nav-link active" href="index.html" role="button" aria-expanded="false">
                                     Home
                                 </a>
                             </li>
@@ -160,20 +164,163 @@
                             <li class="nav-item hasDrop d-lg-none">
                                 <a class="nav-link">
                                     SHADES
+                                    <div class="DwonArrowNav">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
                                 </a>
                                 <ul class="dropdownMenu">
                                     <li class="dropdown-item">
                                         <a href="#">Commercial</a>
                                     </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Agricultural Shed</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Farm Shed</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Machinery Shed</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Pump Shed</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Wine Store</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Cellar Door</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Aircraft Hangar</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Custom Sheds</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Equine</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Rural Sheds</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Pre-Fabricated Buildings</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-item hasDrop d-lg-none">
                                 <a class="nav-link">
-                                    SHADES2
+                                    Garages
+                                    <div class="DwonArrowNav">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
                                 </a>
                                 <ul class="dropdownMenu">
                                     <li class="dropdown-item">
+                                        <a href="#">Garaport</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Gable</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Skillion</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Domestic</a>
+                                    </li>
+                                    <li class="dropdown-item">
                                         <a href="#">Commercial</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Specials</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item hasDrop d-lg-none">
+                                <a class="nav-link">
+                                    Carports
+                                    <div class="DwonArrowNav">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </a>
+                                <ul class="dropdownMenu">
+                                    <li class="dropdown-item">
+                                        <a href="#">Gable</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Skillion / Flat Roof</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Firmlok / Colorbeam</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Verandahs</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Pergola</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Polycarbonate</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item hasDrop d-lg-none">
+                                <a class="nav-link">
+                                    Barns
+                                    <div class="DwonArrowNav">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </a>
+                                <ul class="dropdownMenu">
+                                    <li class="dropdown-item">
+                                        <a href="#">American/Raised Roof</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Aussie Barn</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Air Vented Stable Barn</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Specials</a>
+                                    </li>
+                        
+                                </ul>
+                            </li>
+                            <li class="nav-item hasDrop d-lg-none">
+                                <a class="nav-link">
+                                    Stables
+                                    <div class="DwonArrowNav">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </a>
+                                <ul class="dropdownMenu">
+                                    <li class="dropdown-item">
+                                        <a href="#">Enclosed</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Open Sided</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Paddock Shelter</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item hasDrop d-lg-none">
+                                <a class="nav-link">
+                                    Shelter Covers
+                                    <div class="DwonArrowNav">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </a>
+                                <ul class="dropdownMenu">
+                                    <li class="dropdown-item">
+                                        <a href="#">School Covers</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Loading Bay Docks</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#">Horse Arena Roof Covers</a>
                                     </li>
                                 </ul>
                             </li>
@@ -192,9 +339,7 @@
                         </a>
             </nav>
         </div>
-        <div class="overlay" id="overlay">
-            <span class="close-icon" id="closeOverlay">&times;</span>
-        </div>
+       
     </section>
     <!-- Navbar End -->
 

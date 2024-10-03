@@ -1,42 +1,30 @@
 // Navbar Start
 
-body.overflow-hidden {
-    overflow: hidden;
-    /* Hide body overflow */
-}
 
 .overlay {
     display: none;
-    /* Initially hidden */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent background */
-    z-index: 1;
-    /* Make sure it covers everything */
+    z-index: 5;
 }
 
-.is-invalid {
-    border-color: #dc3545;
-    /* Red color for errors */
-}
 
 .close-icon {
     position: absolute;
     top: 8px;
     right: 15px;
-    font-size: 50px;
-    color: white;
-    z-index: 10;
+    font-size: 36px;
+    color: $secondaryBlack;
+    line-height: 1;
     cursor: pointer;
 }
 
 .overlay.active {
     display: block;
-    /* Show overlay */
 }
 
 .SubNavbar {
@@ -74,7 +62,7 @@ body.overflow-hidden {
 
 
     position: fixed;
-    z-index: 999;
+    z-index: 9;
     width: 100%;
     background-color: #FFF;
     animation: navTop 0.6s ease;
@@ -315,6 +303,7 @@ body.overflow-hidden {
     .navbar-brand {
         padding: 0px;
         margin: 0px;
+        width: 90px;
     }
 
     .navbar-nav {
@@ -374,6 +363,9 @@ body.overflow-hidden {
                 display: flex;
                 gap: 0px 10px;
                 align-items: center;
+                &.active{
+                    color: $primary;
+                }
 
 
             }
