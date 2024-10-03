@@ -374,11 +374,12 @@ p {
   :root {
     --fs14: 12px;
     --fs56: 30px;
+    --fs36: 22px;
     --fs24: 18px;
     --fs16: 14px;
     --fs32: 24px;
-    --fs20: 18px;
-    --fs18: 16px;
+    --fs20: 16px;
+    --fs18: 15px;
     --p100:50px;
     --mb40: 20px;
   }
@@ -1089,17 +1090,19 @@ p {
   display: inline-block;
   margin-top: 10px;
   position: relative;
-  border-right: 1px solid transparent;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
 }
 .OurProducts .InnerProductBox .ProductCaption .headertop::before {
   position: absolute;
   content: "";
   right: 0%;
-  border-bottom: 21px solid transparent;
-  border-left: 10px solid #fff;
-  border-top: 19px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #fff;
+  border-top: 20px solid transparent;
   top: 0;
-  transform: translateX(108%);
+  transform: translateX(100%);
 }
 .OurProducts .InnerProductBox .ProductCaption .headertop p {
   color: #003346;
@@ -2598,12 +2601,11 @@ p {
   }
   .ProjectCounter .projectFactsWrap .item {
     width: calc(50% - 10px);
+    flex-direction: column;
+    min-width: auto;
   }
   .ProjectCounter .projectFactsWrap {
-    gap: 20px 0px;
-  }
-  .ProjectCounter .projectFactsWrap .item {
-    justify-content: center;
+    gap: 30px 0px;
   }
   .OurProcess .ProcessItem img {
     width: 70px;
@@ -2631,6 +2633,17 @@ p {
   }
 }
 @media (max-width: 991.98px) {
+  .OurProcess .InnerProcess {
+    flex-wrap: wrap;
+    gap: 30px 0px;
+    justify-content: center;
+  }
+  .OurProcess .NextArrow {
+    display: none;
+  }
+  .OurProcess .ProcessItem {
+    width: calc(33.33% - 20px);
+  }
   .mainNavbar .navbar-brand {
     height: 60px;
     padding: 5px 0px;
@@ -2795,11 +2808,6 @@ p {
   }
   .OurProducts .InnerProductBox .ProductCaption .headertop {
     padding: 7px;
-  }
-  .OurProducts .InnerProductBox .ProductCaption .headertop::before {
-    border-bottom: 12px solid transparent;
-    border-left: 10px solid #fff;
-    border-top: 21px solid transparent;
   }
   .OurProducts .InnerProductBox .ProductCaption h3 {
     font-size: var(--fs26);
@@ -3135,22 +3143,14 @@ p {
     flex-wrap: wrap;
     gap: 20px;
   }
-  .OurProcess .InnerProcess {
-    flex-wrap: wrap;
-    gap: 20px 0px;
-  }
-  .OurProcess .NextArrow {
-    display: none;
-  }
   .OurProcess .ProcessItem {
-    width: 100%;
+    width: calc(50% - 15px);
   }
   .OurProcess {
     padding: 30px 0px;
   }
   .OurProcess p {
     padding-top: 8px;
-    padding-bottom: 10px;
   }
   .OurProcess .ProcessItem img {
     width: 50px;
@@ -3162,12 +3162,6 @@ p {
   }
   .OurProducts .InnerProductBox .ProductCaption .headertop p {
     font-size: 12px;
-  }
-  .OurProducts .InnerProductBox .ProductCaption .headertop {
-    padding: 4px;
-  }
-  .OurProducts .InnerProductBox .ProductCaption .headertop::before {
-    border-top: 13px solid transparent;
   }
   .navbar-toggler {
     padding: 0px;
@@ -3182,9 +3176,6 @@ p {
   .FooterSection .InnerFooter .footerItem {
     width: 100%;
     max-width: 100%;
-  }
-  .ProjectCounter .projectFactsWrap .item {
-    width: 100%;
   }
   .FooterSection .copyRightInner {
     padding-top: 15px;

@@ -869,17 +869,19 @@
                 display: inline-block;
                 margin-top: 10px;
                 position: relative;
-                border-right: 1px solid transparent;
+                height: 40px;
+                display: inline-flex;
+                align-items: center;
 
                 &::before {
                     position: absolute;
                     content: "";
                     right: 0%;
-                    border-bottom: 21px solid transparent;
-                    border-left: 10px solid #fff;
-                    border-top: 19px solid transparent;
+                    border-bottom: 20px solid transparent;
+                    border-left: 20px solid #fff;
+                    border-top: 20px solid transparent;
                     top: 0;
-                    transform: translateX(108%);
+                    transform: translateX(100%);
                 }
 
                 p {

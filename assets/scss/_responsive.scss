@@ -3,10 +3,12 @@
         position: relative;
         height: 570px;
     }
+
     .mainNavbar .navbar-brand {
-            height: 75px;
-        
-        }
+        height: 75px;
+
+    }
+
     .HeroSec .HeroBanner {
         height: calc(100vh - 124px);
     }
@@ -98,7 +100,7 @@
             max-width: 140px;
         }
     }
-    
+
 }
 
 // Ipad pro 
@@ -107,12 +109,15 @@
     .mainNavbar .navbar-brand {
         height: 65px;
     }
+
     .CareerSec .container {
         max-width: 900px !important;
     }
+
     .InneerCheckBox .CoreCheckBox {
         width: 25px;
     }
+
     .HeroSec .HeroBanner img {
         object-fit: cover;
     }
@@ -185,14 +190,12 @@
 
     .ProjectCounter .projectFactsWrap .item {
         width: calc(50% - 10px);
+        flex-direction: column;
+        min-width: auto;
     }
 
     .ProjectCounter .projectFactsWrap {
-        gap: 20px 0px;
-    }
-
-    .ProjectCounter .projectFactsWrap .item {
-        justify-content: center;
+        gap: 30px 0px;
     }
 
     .OurProcess .ProcessItem {
@@ -234,55 +237,80 @@
 
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+   
+    .OurProcess {
+        .InnerProcess {
+            flex-wrap: wrap;
+            gap: 30px 0px;
+            justify-content: center;
+        }
+        .NextArrow {
+            display: none;
+        }
+        .ProcessItem{
+            width: calc(33.33% - 20px);
+        }
+    }
     .mainNavbar .navbar-brand {
         height: 60px;
         padding: 5px 0px;
     }
+
     .CareerSec .container {
         max-width: 600px !important;
     }
-.nav-item .dropdownMenu {
-    opacity: 1 !important;
-}
+
+    .nav-item .dropdownMenu {
+        opacity: 1 !important;
+    }
+
     .navbar-nav {
         .dropdownMenu {
             display: none;
         }
     }
+
     .mainNavbar .navbar-nav .nav-item:hover .DwonArrowNav {
         transform: unset;
     }
+
     .mainNavbar .dropdown-item-Link img {
-      display: none;
+        display: none;
     }
+
     .nav-item.active {
         .dropdownMenu {
-     opacity: 1 !important;
-     visibility: visible !important;
-     display: block;
-           
+            opacity: 1 !important;
+            visibility: visible !important;
+            display: block;
+
         }
-        .nav-link{
+
+        .nav-link {
             .DwonArrowNav {
                 transform: rotate(180deg) !important;
             }
         }
     }
+
     .mainNavbar .dropdown-item:last-of-type {
         padding-bottom: 0px;
     }
-.nav-item.hasDrop{
-    .dropdownMenu{
-        .dropdown-item{
-            border-bottom: unset;
-            a{
-                font-size: var(--fs14);
-                color: $secondaryBlack;
-                line-height: 1.2;
+
+    .nav-item.hasDrop {
+        .dropdownMenu {
+            .dropdown-item {
+                border-bottom: unset;
+
+                a {
+                    font-size: var(--fs14);
+                    color: $secondaryBlack;
+                    line-height: 1.2;
+                }
             }
         }
     }
-}
+
     .mainNavbar .navbar-nav .nav-item .nav-link {
         justify-content: space-between;
         width: 100%;
@@ -446,12 +474,6 @@
         padding: 7px;
     }
 
-    .OurProducts .InnerProductBox .ProductCaption .headertop::before {
-        border-bottom: 12px solid transparent;
-        border-left: 10px solid #fff;
-        border-top: 21px solid transparent;
-    }
-
     .OurProducts .InnerProductBox .ProductCaption h3 {
         font-size: var(--fs26);
     }
@@ -613,12 +635,15 @@
     .mainNavbar .navbar-brand {
         height: 60px;
     }
+
     .CareerSec .container {
         max-width: 100% !important;
     }
+
     .CareerSec .RequestQuote.career {
         padding-top: 25px;
     }
+
     .AboutSection .InnerAboutSec .ContentAbout .InnerlistItem {
         gap: 15px;
     }
@@ -855,7 +880,7 @@
         gap: 15px;
     }
 
-    
+
 
     .AboutSection.CoreFeaturs .ContentAbout p {
         padding: 20px 0;
@@ -896,20 +921,10 @@
         gap: 20px;
     }
 
-    .OurProcess {
-        .InnerProcess {
-            flex-wrap: wrap;
-            gap: 20px 0px;
-
-        }
-
-        .NextArrow {
-            display: none;
-        }
-    }
+  
 
     .OurProcess .ProcessItem {
-        width: 100%;
+        width: calc(50% - 15px);
 
     }
 
@@ -919,7 +934,6 @@
 
     .OurProcess p {
         padding-top: 8px;
-        padding-bottom: 10px;
     }
 
     .OurProcess .ProcessItem img {
@@ -934,14 +948,6 @@
 
     .OurProducts .InnerProductBox .ProductCaption .headertop p {
         font-size: 12px;
-    }
-
-    .OurProducts .InnerProductBox .ProductCaption .headertop {
-        padding: 4px;
-    }
-
-    .OurProducts .InnerProductBox .ProductCaption .headertop::before {
-        border-top: 13px solid transparent;
     }
 
     .navbar-toggler {
@@ -961,10 +967,6 @@
 
         width: 100%;
         max-width: 100%;
-    }
-
-    .ProjectCounter .projectFactsWrap .item {
-        width: 100%;
     }
 
     .FooterSection .copyRightInner {
