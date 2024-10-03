@@ -633,7 +633,7 @@ p {
 .mainNavbar .navbar-brand {
   padding: 0px;
   margin: 0px;
-  height: 90px;
+  height: 80px;
 }
 .mainNavbar .navbar-brand img {
   height: 100%;
@@ -2463,7 +2463,7 @@ p {
     height: 570px;
   }
   .mainNavbar .navbar-brand {
-    height: 80px;
+    height: 75px;
   }
   .HeroSec .HeroBanner {
     height: calc(100vh - 124px);
@@ -2535,7 +2535,7 @@ p {
 }
 @media (max-width: 1199.98px) {
   .mainNavbar .navbar-brand {
-    height: 70px;
+    height: 65px;
   }
   .CareerSec .container {
     max-width: 900px !important;
@@ -2631,6 +2631,10 @@ p {
   }
 }
 @media (max-width: 991.98px) {
+  .mainNavbar .navbar-brand {
+    height: 60px;
+    padding: 5px 0px;
+  }
   .CareerSec .container {
     max-width: 600px !important;
   }

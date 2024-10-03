@@ -4,7 +4,7 @@
         height: 570px;
     }
     .mainNavbar .navbar-brand {
-            height: 80px;
+            height: 75px;
         
         }
     .HeroSec .HeroBanner {
@@ -105,7 +105,7 @@
 // `xl` applies to large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
     .mainNavbar .navbar-brand {
-        height: 70px;
+        height: 65px;
     }
     .CareerSec .container {
         max-width: 900px !important;
@@ -234,7 +234,10 @@
 
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
-   
+    .mainNavbar .navbar-brand {
+        height: 60px;
+        padding: 5px 0px;
+    }
     .CareerSec .container {
         max-width: 600px !important;
     }
