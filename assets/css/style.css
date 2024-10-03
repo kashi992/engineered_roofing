@@ -453,6 +453,22 @@ p {
     top: 0px;
   }
 }
+.InnerTopHeader {
+  gap: 15px;
+}
+.InnerTopHeader .topEmails {
+  font-size: var(--fs14);
+  color: #FFF;
+}
+
+.SocailInner {
+  gap: 10px;
+}
+.SocailInner .socailIcon {
+  color: #FFF;
+  font-size: var(--fs14);
+}
+
 .mainNavbar {
   /* Hide dropdown by default */
   /* Show dropdown on hover */
@@ -464,20 +480,6 @@ p {
 }
 .mainNavbar .topHeader .MainInnerTopHeader {
   flex-wrap: wrap;
-}
-.mainNavbar .topHeader .InnerTopHeader {
-  gap: 15px;
-}
-.mainNavbar .topHeader .InnerTopHeader .topEmails {
-  font-size: var(--fs14);
-  color: #FFF;
-}
-.mainNavbar .topHeader .SocailInner {
-  gap: 10px;
-}
-.mainNavbar .topHeader .SocailInner .socailIcon {
-  color: #FFF;
-  font-size: var(--fs14);
 }
 .mainNavbar .nav-item .dropdownMenu {
   position: absolute;
@@ -1242,6 +1244,23 @@ p {
   padding-top: 10px;
 }
 
+.innerSocailIcon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  opacity: 0;
+}
+.innerSocailIcon .socailIcon {
+  color: #FFF;
+  font-size: var(--fs18);
+}
+
 .OurTeams {
   text-align: center;
 }
@@ -1268,22 +1287,6 @@ p {
   position: relative;
   display: inline-block;
   transition: opacity 0.4s ease-in-out;
-}
-.OurTeams .InnerTeams .TeamsCard .TeamsCardImg .innerSocailIcon {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9;
-  opacity: 0;
-}
-.OurTeams .InnerTeams .TeamsCard .TeamsCardImg .innerSocailIcon .socailIcon {
-  color: #FFF;
-  font-size: var(--fs18);
 }
 .OurTeams .InnerTeams .TeamsCard .TeamsCardImg::before {
   content: "";

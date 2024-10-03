@@ -80,7 +80,22 @@
 }
 
 
+.InnerTopHeader {
+    gap: 15px;
 
+    .topEmails {
+        font-size: var(--fs14);
+        color: $WhiteClr;
+
+    }
+}
+.SocailInner{
+    gap: 10px;
+    .socailIcon{
+        color: $WhiteClr;
+        font-size: var(--fs14);
+    }
+}
 .mainNavbar {
     .topHeader {
         background-color: $primary;
@@ -91,22 +106,7 @@
             flex-wrap: wrap;
         }
 
-        .InnerTopHeader {
-            gap: 15px;
-
-            .topEmails {
-                font-size: var(--fs14);
-                color: $WhiteClr;
-
-            }
-        }
-        .SocailInner{
-            gap: 10px;
-            .socailIcon{
-                color: $WhiteClr;
-                font-size: var(--fs14);
-            }
-        }
+        
     }
 
     /* Hide dropdown by default */
@@ -1067,6 +1067,23 @@
 // OurProcess End
 
 //OurTeams Start
+.innerSocailIcon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    opacity: 0;
+
+    .socailIcon {
+        color: $WhiteClr;
+        font-size: var(--fs18);
+    }
+}
 .OurTeams {
     text-align: center;
 
@@ -1096,23 +1113,7 @@
                 display: inline-block;
                 transition: opacity 0.4s ease-in-out;
 
-                .innerSocailIcon {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    justify-content: center;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    z-index: 9;
-                    opacity: 0;
-
-                    .socailIcon {
-                        color: $WhiteClr;
-                        font-size: var(--fs18);
-                    }
-                }
+                
 
                 &::before {
                     content: "";
