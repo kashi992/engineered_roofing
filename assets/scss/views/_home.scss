@@ -246,7 +246,7 @@ body.overflow-hidden {
         visibility: hidden;
         position: absolute;
         right: -0.8px;
-        top: 0;
+        top: -4px;
         border-top: 4px solid $primary;
         background-color: $WhiteClr;
         padding: 15px 0px 20px 0px;
@@ -690,14 +690,7 @@ body.overflow-hidden {
     }
 
     .CoreCheckBox {
-        background-color: $primary;
-        height: 35px;
-        min-width: 35px;
-        border-radius: 50px;
-
-        img {
-            width: 20px;
-        }
+         width: 30px;
     }
 }
 

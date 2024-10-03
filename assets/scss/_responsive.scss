@@ -10,6 +10,7 @@
 
     .mainNavbar .navbar-nav {
         height: 80px;
+        max-width: 640px;
     }
 
     .mainNavbar .navbar-brand {
@@ -56,6 +57,7 @@
 
     .mainNavbar .navbar-nav {
         height: 70px;
+        max-width: 600px;
     }
 
     .mainNavbar .navbar-brand {
@@ -104,11 +106,15 @@
             max-width: 140px;
         }
     }
+    
 }
 
 // Ipad pro 
 // `xl` applies to large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
+    .InneerCheckBox .CoreCheckBox {
+        width: 25px;
+    }
     .HeroSec .HeroBanner img {
         object-fit: cover;
     }
@@ -116,16 +122,6 @@
     .RequestQuote .InnerProgressBar {
         flex-wrap: wrap;
         gap: 10px;
-    }
-
-    .InneerCheckBox .CoreCheckBox {
-        height: 30px;
-        min-width: 30px;
-    }
-
-    .InneerCheckBox .CoreCheckBox img {
-        width: 20px;
-        height: 20px;
     }
 
     .RequestQuote .nav .nav-item {
@@ -242,6 +238,14 @@
 
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+// .mainNavbar .dropdown-item-sub {
+// box-shadow: unset;
+// position: unset;
+// transform: un;
+// }
+.nav-item .dropdownMenu {
+    opacity: 1 !important;
+}
     .navbar-nav {
         .dropdownMenu {
             display: none;
@@ -255,7 +259,9 @@
     }
     .nav-item.active {
         .dropdownMenu {
-            display: block;
+     opacity: 1 !important;
+     visibility: visible !important;
+     display: block;
            
         }
         .nav-link{
@@ -275,6 +281,8 @@
         padding-bottom: 20px;
         flex-direction: column;
         border: unset;
+        padding-left: 0px;
+        padding-right: 0px;
 
         &:last-of-type {
             padding-bottom: 0px;
@@ -284,6 +292,7 @@
     .mainNavbar .dropdown-item {
         padding-left: 0px;
         padding-right: 0px;
+        border-bottom: 1px solid #71CADA;
     }
 
     .mainNavbar .nav-item .dropdownMenu {
@@ -667,11 +676,6 @@
 
     .card {
         padding-top: 30px;
-    }
-
-    .InneerCheckBox .CoreCheckBox img {
-        width: 15px;
-        height: 15px;
     }
 
     .InneerCheckBox .CoreCheckBox {

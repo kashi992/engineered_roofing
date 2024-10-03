@@ -590,7 +590,7 @@ body.overflow-hidden {
   visibility: hidden;
   position: absolute;
   right: -0.8px;
-  top: 0;
+  top: -4px;
   border-top: 4px solid #71CADA;
   background-color: #FFF;
   padding: 15px 0px 20px 0px;
@@ -949,13 +949,7 @@ body.overflow-hidden {
   font-weight: 400;
 }
 .InneerCheckBox .CoreCheckBox {
-  background-color: #71CADA;
-  height: 35px;
-  min-width: 35px;
-  border-radius: 50px;
-}
-.InneerCheckBox .CoreCheckBox img {
-  width: 20px;
+  width: 30px;
 }
 
 .AboutSection.CoreFeaturs h2 {
@@ -2452,6 +2446,7 @@ body.overflow-hidden {
   }
   .mainNavbar .navbar-nav {
     height: 80px;
+    max-width: 640px;
   }
   .mainNavbar .navbar-brand {
     width: 185px;
@@ -2487,6 +2482,7 @@ body.overflow-hidden {
   }
   .mainNavbar .navbar-nav {
     height: 70px;
+    max-width: 600px;
   }
   .mainNavbar .navbar-brand {
     width: 160px;
@@ -2524,20 +2520,15 @@ body.overflow-hidden {
   }
 }
 @media (max-width: 1199.98px) {
+  .InneerCheckBox .CoreCheckBox {
+    width: 25px;
+  }
   .HeroSec .HeroBanner img {
     object-fit: cover;
   }
   .RequestQuote .InnerProgressBar {
     flex-wrap: wrap;
     gap: 10px;
-  }
-  .InneerCheckBox .CoreCheckBox {
-    height: 30px;
-    min-width: 30px;
-  }
-  .InneerCheckBox .CoreCheckBox img {
-    width: 20px;
-    height: 20px;
   }
   .RequestQuote .nav .nav-item {
     max-width: 100%;
@@ -2622,6 +2613,9 @@ body.overflow-hidden {
   }
 }
 @media (max-width: 991.98px) {
+  .nav-item .dropdownMenu {
+    opacity: 1 !important;
+  }
   .navbar-nav .dropdownMenu {
     display: none;
   }
@@ -2632,6 +2626,8 @@ body.overflow-hidden {
     display: none;
   }
   .nav-item.active .dropdownMenu {
+    opacity: 1 !important;
+    visibility: visible !important;
     display: block;
   }
   .nav-item.active .nav-link .DwonArrowNav {
@@ -2646,6 +2642,8 @@ body.overflow-hidden {
     padding-bottom: 20px;
     flex-direction: column;
     border: unset;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .mainNavbar .navbar-nav .nav-item:last-of-type {
     padding-bottom: 0px;
@@ -2653,6 +2651,7 @@ body.overflow-hidden {
   .mainNavbar .dropdown-item {
     padding-left: 0px;
     padding-right: 0px;
+    border-bottom: 1px solid #71CADA;
   }
   .mainNavbar .nav-item .dropdownMenu {
     position: unset;
@@ -2941,10 +2940,6 @@ body.overflow-hidden {
   }
   .card {
     padding-top: 30px;
-  }
-  .InneerCheckBox .CoreCheckBox img {
-    width: 15px;
-    height: 15px;
   }
   .InneerCheckBox .CoreCheckBox {
     height: 25px;

@@ -524,13 +524,13 @@ $('.form-control').on('focus blur change', function (e) {
 
 
 ///Products Slider IMG
-$(document).ready(function() {
+$(document).ready(function () {
     let imgId = 1;
     let autoplayInterval;
 
     // Add click event listeners for image buttons
-    $('.img-select a').each(function() {
-        $(this).on('click', function(event) {
+    $('.img-select a').each(function () {
+        $(this).on('click', function (event) {
             event.preventDefault();
             imgId = $(this).data('id');
 
@@ -552,7 +552,7 @@ $(document).ready(function() {
 
     // Function to start autoplay
     function startAutoplay() {
-        autoplayInterval = setInterval(function() {
+        autoplayInterval = setInterval(function () {
             imgId++;
             if (imgId > $('.img-select a').length) {
                 imgId = 1; // Loop back to the first image
@@ -578,27 +578,57 @@ $(document).ready(function() {
 });
 
 
-
-// $(document).ready(function () {
-//     $('#services-link').on('click', function (e) {
-//         e.preventDefault(); // Prevent the default anchor behavior
-        
-//         // Toggle the 'active' class on the nav-item
-//         $('#services-item').toggleClass('active');
-//     });
+// document.getElementById('services-link').addEventListener('click', function (e) {
+//     e.preventDefault(); // Prevent the default anchor behavior
+//     const navItem = document.getElementById('services-item');
+//     navItem.classList.toggle('active');
 // });
-  // Toggle the active class on services link click
-  document.getElementById('services-link').addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent the default anchor behavior
-    const navItem = document.getElementById('services-item');
-    navItem.classList.toggle('active');
-});
 
 // Remove active class when clicking anywhere on the body
-document.body.addEventListener('click', function (e) {
-    const navItem = document.getElementById('services-item');
-    const targetElement = e.target.closest('.nav-item'); // Check if clicked inside nav-item
-    if (!targetElement) { // If the click was outside the nav-item
-        navItem.classList.remove('active');
+// document.body.addEventListener('click', function (e) {
+//     const navItem = document.getElementsByClassName('hasDrop');
+//     const targetElement = e.target.closest('.nav-item'); // Check if clicked inside nav-item
+//     if (!targetElement) { // If the click was outside the nav-item
+//         navItem.classList.remove('ssactive');
+//     }
+// });
+
+$(document).ready(function () {
+    let isListenerActive = false;
+
+    function addRemoveActiveClassListener() {
+        function handleClick(e) {
+            const navItem = $(e.target).closest('.hasDrop'); // Get the clicked .hasDrop element
+
+            // If a navItem is clicked
+            if (navItem.length) {
+                // Remove 'active' class from all other .hasDrop elements except the clicked one
+                $('.hasDrop').not(navItem).removeClass('active');
+
+                // Toggle 'active' class on the clicked .hasDrop element
+                navItem.toggleClass('active');
+            } 
+        }
+
+        if ($(window).width() <= 1000) {
+            if (!isListenerActive) {
+                $(document.body).on('click', handleClick);
+                isListenerActive = true;
+            }
+        } else {
+            if (isListenerActive) {
+                $(document.body).off('click', handleClick);
+                isListenerActive = false;
+            }
+        }
     }
+
+    // Run the function on page load and when the window is resized
+    addRemoveActiveClassListener();
+    $(window).resize(function () {
+        addRemoveActiveClassListener();
+    });
 });
+
+
+
