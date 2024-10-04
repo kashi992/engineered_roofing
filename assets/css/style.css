@@ -2632,6 +2632,9 @@ p {
   }
 }
 @media (max-width: 1199.98px) {
+  .AboutSection .InnerAboutSec {
+    gap: 40px 0px;
+  }
   .AboutSection .InnerAboutSec .ContentAbout.Aboutcontent {
     width: 100%;
   }
@@ -2640,7 +2643,8 @@ p {
     width: 100%;
   }
   .AboutSection .AboutImg .warrentyBadge {
-    transform: translate(25%, 50%);
+    transform: translate(-50%, 50%);
+    left: 50%;
   }
   .AboutSection .ContentAbout {
     width: 100%;
@@ -2854,6 +2858,11 @@ p {
   .mainNavbar .navbar-nav {
     height: auto;
   }
+  .mainNavbar .navbar-nav .mobileLogo {
+    max-width: 130px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
   .CommeracilSheds .glanceItem .InneerCheckBox {
     padding-bottom: 30px;
   }
@@ -3054,6 +3063,9 @@ p {
   }
 }
 @media (max-width: 575.98px) {
+  .mainNavbar .navbar-nav .mobileLogo {
+    max-width: 100px;
+  }
   .AboutSection .InnerAboutSec {
     gap: 35px;
   }
