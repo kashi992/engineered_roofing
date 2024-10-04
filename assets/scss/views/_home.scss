@@ -88,11 +88,14 @@
         color: $WhiteClr;
 
     }
+
 }
-.SocailInner{
-    gap: 10px;
+
+.SocailInner {
+    gap: 20px;
     padding-top: 15px;
-    .socailIcon{
+
+    .socailIcon {
         font-size: var(--fs20);
         min-width: 20px;
         width: 20px;
@@ -100,17 +103,15 @@
         display: block;
     }
 }
+
 .mainNavbar {
     .topHeader {
         background-color: $primary;
         padding: 10px 0px;
 
-        .MainInnerTopHeader {
-
-            flex-wrap: wrap;
+        .SocailInner {
+            padding-top: 0px !important;
         }
-
-        
     }
 
     /* Hide dropdown by default */
@@ -148,7 +149,7 @@
     }
 
     .dropdown-toggle::after {
-     display: none;
+        display: none;
     }
 
 
@@ -308,7 +309,8 @@
         padding: 0px;
         margin: 0px;
         height: 80px;
-        img{
+
+        img {
             height: 100%;
         }
     }
@@ -354,7 +356,8 @@
                 color: $secondaryBlack;
                 line-height: 1.2;
                 font-size: var(--fs16);
-                &.active{
+
+                &.active {
                     color: $primary;
                 }
             }
@@ -373,7 +376,8 @@
                 display: flex;
                 gap: 0px 10px;
                 align-items: center;
-                &.active{
+
+                &.active {
                     color: $primary;
                 }
 
@@ -545,17 +549,19 @@
 
 // About Section Start
 .AboutSection {
-    .ContentAbout{
+    .ContentAbout {
         width: calc(48% - 15px);
     }
+
     .AboutImg {
         position: relative;
         height: 600px;
         width: calc(50% - 15px);
+
         img {
             width: 100%;
             height: 100%;
-            border-radius:16px ;
+            border-radius: 16px;
         }
 
         .warrentyBadge {
@@ -619,6 +625,7 @@
                     font-size: var(--fs24);
                 }
             }
+
             h2 {
                 color: $secondaryBlack;
                 padding-top: 10px;
@@ -632,11 +639,11 @@
                 font-weight: 500;
                 font-size: var(--fs24);
                 padding-bottom: 20px;
-               
+
             }
 
             .boxIcon {
-                min-width:45px;
+                min-width: 45px;
                 min-height: 45px;
                 border-radius: 100px;
                 background-color: #F4F1EE;
@@ -688,7 +695,8 @@
 
     .CoreCheckBox {
         max-width: 30px;
-        img{
+
+        img {
             width: 100%;
         }
     }
@@ -1083,6 +1091,7 @@
         font-size: var(--fs18);
     }
 }
+
 .OurTeams {
     text-align: center;
 
@@ -1112,7 +1121,7 @@
                 display: inline-block;
                 transition: opacity 0.4s ease-in-out;
 
-                
+
 
                 &::before {
                     content: "";
@@ -1348,7 +1357,7 @@
 .FooterSection {
     background: url(../img/footer-img-bg.jpg);
     background-repeat: no-repeat;
-    padding: 60px 0px;
+    padding-top: 60px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1371,13 +1380,14 @@
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid $WhiteClr;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
 
         .footerItem {
             width: fit-content;
             max-width: calc(33.33% - 15px);
         }
     }
+
     h6 {
         color: $WhiteClr;
         line-height: 1.4;
@@ -1404,16 +1414,19 @@
         font-size: var(--fs16);
         padding-bottom: 15px;
         transition: all 0.5s ease-in-out;
-i{
-    font-size: var(--fs20);
-    min-width: 20px;
-    width: 20px;
-}
+
+        i {
+            font-size: var(--fs20);
+            min-width: 20px;
+            width: 20px;
+        }
+
         &:hover {
 
             color: $primary;
         }
-        &:last-of-type{
+
+        &:last-of-type {
             padding-bottom: 0px;
         }
     }
@@ -1422,7 +1435,7 @@ i{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 30px;
+        padding: 30px 0px;
 
         span {
             color: $WhiteClr;

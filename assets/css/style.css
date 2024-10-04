@@ -465,7 +465,7 @@ p {
 }
 
 .SocailInner {
-  gap: 10px;
+  gap: 20px;
   padding-top: 15px;
 }
 .SocailInner .socailIcon {
@@ -485,8 +485,8 @@ p {
   background-color: #71CADA;
   padding: 10px 0px;
 }
-.mainNavbar .topHeader .MainInnerTopHeader {
-  flex-wrap: wrap;
+.mainNavbar .topHeader .SocailInner {
+  padding-top: 0px !important;
 }
 .mainNavbar .nav-item .dropdownMenu {
   position: absolute;
@@ -1463,7 +1463,7 @@ p {
 .FooterSection {
   background: url(../img/footer-img-bg.jpg);
   background-repeat: no-repeat;
-  padding: 60px 0px;
+  padding-top: 60px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1485,7 +1485,7 @@ p {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #FFF;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 .FooterSection .InnerFooter .footerItem {
   width: fit-content;
@@ -1529,7 +1529,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 30px;
+  padding: 30px 0px;
 }
 .FooterSection .copyRightInner span {
   color: #FFF;
@@ -2762,6 +2762,14 @@ p {
   }
 }
 @media (max-width: 991.98px) {
+  .SocailInner {
+    gap: 10px;
+  }
+  .mainNavbar .topHeader .InnerTopHeader .topEmails {
+    gap: 0px 10px;
+    display: flex;
+    align-items: center;
+  }
   .FooterSection .InnerFooter {
     flex-wrap: wrap;
     gap: 30px 0px;
@@ -3016,10 +3024,13 @@ p {
   }
   .FooterSection .copyRightInner {
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding: 20px 0px;
   }
   .FooterSection {
-    padding: 40px 0px;
+    padding-top: 50px;
+  }
+  .FooterSection .InnerFooter {
+    padding-bottom: 30px;
   }
   .FooterSection h6 {
     padding-bottom: 10px;
@@ -3148,7 +3159,7 @@ p {
     font-size: 10px;
     display: flex;
     align-items: center;
-    gap: 0px 8px;
+    gap: 0px 6px;
   }
   .mainNavbar .topHeader {
     padding: 5px 0px;
@@ -3267,7 +3278,7 @@ p {
     gap: 20px 0px;
   }
   .FooterSection .InnerFooter {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
   .FooterSection .footerLink {
     padding-bottom: 10px;

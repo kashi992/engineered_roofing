@@ -632,5 +632,21 @@ $(document).ready(function () {
     });
 });
 
+/// Animation code
+$(document).ready(function () {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                $(entry.target).addClass('animate__animated animate__fadeInUp');
+                observer.unobserve(entry.target); // Optionally unobserve the element after animation
+            }
+        });
+    }, {
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    });
 
-
+    // Select all elements with the class 'animateMe' using jQuery
+    $('.animateMe').each(function () {
+        observer.observe(this);
+    });
+});
