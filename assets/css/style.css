@@ -896,7 +896,8 @@ p {
 .AboutSection .InnerAboutSec .ContentAbout h2 {
   color: #003346;
   padding: 10px 0px;
-  text-align: start;
+  padding-top: 10px;
+  padding-bottom: 16px;
 }
 .AboutSection .InnerAboutSec .ContentAbout h3 {
   color: #71CADA;
@@ -2584,10 +2585,6 @@ p {
   }
   .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox .reasonBox {
     padding: 16px;
-  }
-  .AboutSection .InnerAboutSec .ContentAbout h2 {
-    padding-top: 10px;
-    padding-bottom: 16px;
   }
   .AboutSection.CoreFeaturs .ContentAbout p {
     padding-bottom: 30px;
