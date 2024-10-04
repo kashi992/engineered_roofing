@@ -2638,7 +2638,7 @@ p {
     max-width: 900px !important;
   }
   .InneerCheckBox .CoreCheckBox {
-    width: 25px;
+    max-width: 25px;
   }
   .HeroSec .HeroBanner img {
     object-fit: cover;
@@ -3103,7 +3103,6 @@ p {
     padding-top: 30px;
   }
   .InneerCheckBox .CoreCheckBox {
-    height: 25px;
     min-width: 25px;
   }
   .CommercialSec .breadcrumb .breadcrumb-item .breadcrumb-link {
