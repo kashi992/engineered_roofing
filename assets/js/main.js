@@ -82,6 +82,7 @@ $('.logoSlick').slick({
     arrows: false,
     dots: false,
     swipe: true,
+    autoplaySpeed: 3000,
     swipeToSlide: true,
 
     // nextArrow: '.slick-next-testi',
