@@ -326,7 +326,13 @@
         width: 100%;
     }
     .MaterialSec .InnerMaterial {
-        gap: 15px 0px;
+        gap: 20px 0px;
+    }
+    .CommeracilSheds .glanceItem .InneerCheckBox {
+        padding-bottom: 20px;
+    }
+    .InneerCheckBox {
+        gap: 10px 0px;
     }
     .OurProcess {
         .InnerProcess {
@@ -846,11 +852,13 @@
     .FaqSec .accordion-button img {
         width: 20px;
     }
-
+    .FaqSec .accordion-body {
+        padding: 0px 20px 20px 20px;
+    }
     .FaqSec .accordion-button i {
-        width: 20px;
-        height: 20px;
-        font-size: var(--fs12);
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
         line-height: 1.7;
 
     }
