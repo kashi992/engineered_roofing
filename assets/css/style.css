@@ -366,8 +366,8 @@ p {
 @media (max-width: 991.98px) {
   :root {
     --fs24: 17px;
-    --fs56: 40px;
-    --fs36: 30px;
+    --fs56: 32px;
+    --fs36: 22px;
     --fs26: 24px;
   }
 }
@@ -1381,7 +1381,6 @@ p {
   background: #FFFFFF;
   box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.09);
   border-radius: 12px;
-  width: 445px;
   height: 247px;
 }
 .testimonialWrap .testiSlide img {
@@ -2971,7 +2970,7 @@ p {
   }
   .navbar .collapse.show {
     left: 0 !important;
-    height: 100% !important;
+    overflow-y: auto;
   }
   .navbar .navbar-collapse {
     position: fixed;
@@ -2981,8 +2980,8 @@ p {
     gap: 20px;
     z-index: 999;
     padding: 30px 20px;
-    transition: all 0.4s;
-    height: 670px !important;
+    transition: all 0.6s;
+    height: 100% !important;
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -3051,8 +3050,8 @@ p {
     width: 100%;
   }
   .RequestQuote .tab-content {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .WorkigHrs .InnerItems i {
     width: 35px;
@@ -3166,7 +3165,7 @@ p {
     line-height: 1.7;
   }
   .RequestQuote .tab-content {
-    padding: 25px;
+    padding: 15px;
   }
   .RequestQuote .nav .nav-item .nav-link::after {
     width: 29px;

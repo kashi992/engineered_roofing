@@ -45,7 +45,7 @@ $('.testiSlick').slick({
     autoplaySpeed: 3000, // Autoplay speed in milliseconds (3 seconds in this example)
     swipe: true,
     swipeToSlide: true,
-    variableWidth: true,
+    variableWidth: false,
 
     nextArrow: '.slick-next-testi',
     prevArrow: '.slick-prev-testi',
@@ -53,14 +53,14 @@ $('.testiSlick').slick({
     responsive: [{
         breakpoint: 1024,
         settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             centerMode: false,
         }
 
     }, {
         breakpoint: 800,
         settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
         }
     }, {
         breakpoint: 480,

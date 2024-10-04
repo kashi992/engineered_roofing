@@ -585,7 +585,7 @@
 
         .collapse.show {
             left: 0 !important;
-            height: 100% !important;
+            overflow-y: auto;
         }
 
         .navbar-collapse {
@@ -596,8 +596,8 @@
             gap: 20px;
             z-index: 999;
             padding: 30px 20px;
-            transition: all 0.4s;
-            height: 670px !important;
+            transition: all 0.6s;
+            height: 100% !important;
             display: flex;
             align-items: start;
             flex-direction: column;
@@ -692,8 +692,8 @@
     }
 
     .RequestQuote .tab-content {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .WorkigHrs .InnerItems i {
@@ -841,7 +841,7 @@
     }
 
     .RequestQuote .tab-content {
-        padding: 25px;
+        padding: 15px;
     }
 
     .RequestQuote .nav .nav-item .nav-link::after {
