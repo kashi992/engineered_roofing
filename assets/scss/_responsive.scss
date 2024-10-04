@@ -725,7 +725,7 @@
         .SocailInner{
             padding-top: 10px;
             .socailIcon{
-                font-size: var(--fs12);
+                font-size: 10px;
                 min-width: fit-content;
                 width: fit-content;
                 color: $WhiteClr;
@@ -787,6 +787,9 @@
 
     .mainNavbar .topHeader .InnerTopHeader .topEmails {
         font-size: 10px;
+        display: flex;
+        align-items: center;
+        gap: 0px 8px;
     }
 
     .mainNavbar .topHeader {
@@ -967,15 +970,13 @@
     }
 
     .mainNavbar .topHeader .InnerTopHeader {
-        gap: 0px;
+        gap: 10px;
         flex-wrap: wrap;
-        width: 100%;
-        justify-content: space-between;
     }
 
     .mainNavbar .topHeader .SocailInner {
-        width: 100%;
-        justify-content: center;
+     padding-top: 0px;
+     gap: 0px 5px;
     }
 
     .AboutSection.CoreFeaturs .AboutImg.ChoseBox {
