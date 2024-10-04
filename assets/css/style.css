@@ -895,6 +895,9 @@ p {
   font-weight: 600;
   font-size: var(--fs24);
 }
+.AboutSection .InnerAboutSec .ContentAbout.Aboutcontent {
+  width: calc(45% - 15px);
+}
 .AboutSection .InnerAboutSec .ContentAbout h2 {
   color: #003346;
   padding: 10px 0px;
@@ -2634,6 +2637,9 @@ p {
   }
 }
 @media (max-width: 1199.98px) {
+  .AboutSection .InnerAboutSec .ContentAbout.Aboutcontent {
+    width: 100%;
+  }
   .AboutSection .AboutImg {
     height: auto;
   }

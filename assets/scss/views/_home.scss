@@ -619,7 +619,9 @@
                     font-size: var(--fs24);
                 }
             }
-
+&.Aboutcontent{
+    width: calc(45% - 15px);
+}
             h2 {
                 color: $secondaryBlack;
                 padding: 10px 0px;
