@@ -1494,7 +1494,7 @@ p {
 }
 .FooterSection p {
   color: #FFF;
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: var(--fs16);
 }
 .FooterSection .footerLink {
