@@ -523,7 +523,7 @@
         h1 {
             color: $WhiteClr;
             text-align: center;
-            padding-bottom: 10px;
+            padding-bottom: 25px;
 
         }
 
@@ -595,10 +595,6 @@
         width: calc(48% - 25px);
     }
 
-    .AboutDetails {
-        padding-bottom: 40px;
-    }
-
     .InnerAboutSec {
         display: flex;
         align-items: center;
@@ -659,6 +655,7 @@
                     font-size: var(--fs18);
                     line-height: 1.2;
                     font-weight: 500;
+                    margin-bottom: 5px;
                 }
             }
         }
@@ -690,7 +687,10 @@
     }
 
     .CoreCheckBox {
-         width: 30px;
+        max-width: 30px;
+        img{
+            width: 100%;
+        }
     }
 }
 
@@ -1412,6 +1412,9 @@
         &:hover {
 
             color: $primary;
+        }
+        &:last-of-type{
+            padding-bottom: 0px;
         }
     }
 

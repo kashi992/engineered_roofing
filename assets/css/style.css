@@ -819,7 +819,7 @@ p {
 .HeroSec .HeroBanner h1 {
   color: #FFF;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 }
 .HeroSec .HeroBanner p {
   color: #FFF;
@@ -874,9 +874,6 @@ p {
 .AboutSection .AboutW40 {
   width: calc(48% - 25px);
 }
-.AboutSection .AboutDetails {
-  padding-bottom: 40px;
-}
 .AboutSection .InnerAboutSec {
   display: flex;
   align-items: center;
@@ -929,6 +926,7 @@ p {
   font-size: var(--fs18);
   line-height: 1.2;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .InneerCheckBox {
@@ -951,7 +949,10 @@ p {
   font-weight: 400;
 }
 .InneerCheckBox .CoreCheckBox {
-  width: 30px;
+  max-width: 30px;
+}
+.InneerCheckBox .CoreCheckBox img {
+  width: 100%;
 }
 
 .AboutSection.CoreFeaturs h2 {
@@ -1513,6 +1514,9 @@ p {
 }
 .FooterSection .footerLink:hover {
   color: #71CADA;
+}
+.FooterSection .footerLink:last-of-type {
+  padding-bottom: 0px;
 }
 .FooterSection .copyRightInner {
   display: flex;
@@ -2606,6 +2610,24 @@ p {
   }
 }
 @media (max-width: 1199.98px) {
+  .AboutSection .AboutImg {
+    height: auto;
+  }
+  .AboutSection .AboutImg .warrentyBadge {
+    transform: translate(25%, 50%);
+  }
+  .AboutSection .AboutW50 {
+    width: 100%;
+  }
+  .AboutSection .AboutW40 {
+    width: 100%;
+  }
+  .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox:last-of-type {
+    padding-top: 0px;
+  }
+  .AboutSection .InnerAboutSec {
+    gap: 35px 0px;
+  }
   .mainNavbar .navbar-nav {
     max-width: 575px;
   }
@@ -2641,7 +2663,7 @@ p {
     max-width: 100%;
   }
   .AboutSection .AboutW40 {
-    width: calc(50% - 25px);
+    width: 100%;
   }
   .mainNavbar .navbar-nav .nav-item {
     padding: 0px 10px;
@@ -2809,9 +2831,6 @@ p {
   .CommeracilSheds .glanceItem .InneerCheckBox {
     padding-bottom: 30px;
   }
-  .AboutSection .AboutImg .warrentyBadge {
-    transform: translate(25%, 50%);
-  }
   .navbar-toggler {
     padding: 0px;
     border: unset;
@@ -2890,12 +2909,6 @@ p {
     width: 100%;
   }
   .AboutSection .AboutW50 {
-    width: 100%;
-  }
-  .AboutSection .InnerAboutSec {
-    gap: 20px;
-  }
-  .AboutSection .AboutW40 {
     width: 100%;
   }
   .OurProducts .InnerProductBox .ProductCaption .headertop {

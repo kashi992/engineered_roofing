@@ -34,7 +34,7 @@ $('.InnerBannerSlide').slick({
 
 // testiSlick slick start
 $('.testiSlick').slick({
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: false,
@@ -42,7 +42,7 @@ $('.testiSlick').slick({
     arrows: true,
     dots: false,
     autoplay: true, // Autoplay slider
-    autoplaySpeed: 1000, // Autoplay speed in milliseconds (3 seconds in this example)
+    autoplaySpeed: 3000, // Autoplay speed in milliseconds (3 seconds in this example)
     swipe: true,
     swipeToSlide: true,
     variableWidth: true,
