@@ -828,9 +828,18 @@ p {
   font-size: var(--fs18);
 }
 
+.AboutSection .ContentAbout {
+  width: calc(48% - 15px);
+}
 .AboutSection .AboutImg {
   position: relative;
   height: 600px;
+  width: calc(50% - 15px);
+}
+.AboutSection .AboutImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
 }
 .AboutSection .AboutImg .warrentyBadge {
   position: absolute;
@@ -863,17 +872,6 @@ p {
   text-align: center;
   color: #3a3a3a;
 }
-.AboutSection .AboutW50 {
-  width: calc(50% - 30px);
-}
-.AboutSection .AboutW50 img {
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-}
-.AboutSection .AboutW40 {
-  width: calc(48% - 25px);
-}
 .AboutSection .InnerAboutSec {
   display: flex;
   align-items: center;
@@ -894,9 +892,6 @@ p {
   line-height: 1.2;
   font-weight: 600;
   font-size: var(--fs24);
-}
-.AboutSection .InnerAboutSec .ContentAbout.Aboutcontent {
-  width: calc(45% - 15px);
 }
 .AboutSection .InnerAboutSec .ContentAbout h2 {
   color: #003346;
@@ -2579,11 +2574,11 @@ p {
   .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox:last-of-type {
     padding-top: 80px;
   }
-  .AboutSection .AboutW50 {
+  .AboutSection .ContentAbout {
     width: calc(50% - 15px);
   }
-  .AboutSection .AboutW40 {
-    width: calc(50% - 15px);
+  .AboutSection .ContentAbout.Aboutcontent {
+    width: calc(45% - 15px);
   }
   .AboutSection.CoreFeaturs .AboutImg.ChoseBox {
     gap: 12px;
@@ -2642,14 +2637,12 @@ p {
   }
   .AboutSection .AboutImg {
     height: auto;
+    width: 100%;
   }
   .AboutSection .AboutImg .warrentyBadge {
     transform: translate(25%, 50%);
   }
-  .AboutSection .AboutW50 {
-    width: 100%;
-  }
-  .AboutSection .AboutW40 {
+  .AboutSection .ContentAbout {
     width: 100%;
   }
   .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox:last-of-type {
@@ -2761,6 +2754,9 @@ p {
   }
 }
 @media (max-width: 991.98px) {
+  .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox .reasonBox {
+    height: 100%;
+  }
   .MaterialSec .contentMaterail h2 {
     padding-bottom: 15px;
   }

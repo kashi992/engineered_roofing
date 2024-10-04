@@ -63,11 +63,11 @@
     .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox:last-of-type {
         padding-top: 80px;
     }
-    .AboutSection .AboutW50 {
+    .AboutSection .ContentAbout {
         width: calc(50% - 15px);
     }
-    .AboutSection .AboutW40 {
-        width: calc(50% - 15px);
+    .AboutSection .ContentAbout.Aboutcontent {
+        width: calc(45% - 15px);
     }
     .AboutSection.CoreFeaturs .AboutImg.ChoseBox {
         gap: 12px;
@@ -146,14 +146,12 @@
     }
     .AboutSection .AboutImg {
         height: auto;
+        width: 100%;
     }
     .AboutSection .AboutImg .warrentyBadge {
         transform: translate(25%, 50%);
     }
-    .AboutSection .AboutW50 {
-        width: 100%;
-    }
-    .AboutSection .AboutW40 {
+    .AboutSection .ContentAbout {
         width: 100%;
     }
     .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox:last-of-type {
@@ -300,6 +298,9 @@
 
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+    .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox .reasonBox {
+        height: 100%;
+    }
     .MaterialSec .contentMaterail h2 {
         padding-bottom: 15px;
     }
