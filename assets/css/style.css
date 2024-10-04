@@ -2755,6 +2755,9 @@ p {
   }
 }
 @media (max-width: 991.98px) {
+  .footerItem .SocailInner {
+    margin-top: 15px;
+  }
   .FooterSection .InnerFooter {
     flex-wrap: wrap;
     gap: 30px 0px;
@@ -3044,7 +3047,7 @@ p {
     width: 100%;
   }
   .WorkigHrs .InnerWorkingHrs {
-    gap: 20px;
+    gap: 40px;
   }
   .card {
     gap: 20px 0px;
@@ -3069,6 +3072,9 @@ p {
   }
 }
 @media (max-width: 575.98px) {
+  .WorkigHrs .InnerWorkingHrs {
+    gap: 30px;
+  }
   .mainNavbar .navbar-nav .mobileLogo {
     max-width: 80px;
   }
@@ -3269,7 +3275,10 @@ p {
     border-radius: 10px;
   }
   .FooterSection p {
-    padding-bottom: 15px;
+    padding-bottom: 0;
+  }
+  .FooterSection .InnerFooter {
+    gap: 20px 0px;
   }
   .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox {
     gap: 15px;

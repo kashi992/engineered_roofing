@@ -300,6 +300,11 @@
 
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+    .footerItem{
+        .SocailInner {
+            margin-top: 15px;
+        }
+    }
     .FooterSection .InnerFooter {
         flex-wrap: wrap;
         gap: 30px 0px;
@@ -682,7 +687,7 @@
     }
 
     .WorkigHrs .InnerWorkingHrs {
-        gap: 20px;
+        gap: 40px;
     }
 
     .card {
@@ -716,6 +721,9 @@
 //  mobile 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+    .WorkigHrs .InnerWorkingHrs {
+        gap: 30px;
+    }
     .mainNavbar .navbar-nav .mobileLogo {
         max-width: 80px;
     }
@@ -970,8 +978,12 @@
     }
 
     .FooterSection p {
-        padding-bottom: 15px;
+        padding-bottom: 0;
     }
+    .FooterSection .InnerFooter {
+        gap: 20px 0px;
+    }
+  
 
     .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox {
         gap: 15px;
