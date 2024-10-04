@@ -90,14 +90,14 @@ $('.logoSlick').slick({
     responsive: [{
         breakpoint: 1024,
         settings: {
-            slidesToShow: 1,
+            slidesToShow: 4,
             centerMode: false,
         }
 
     }, {
         breakpoint: 800,
         settings: {
-            slidesToShow: 1,
+            slidesToShow: 3,
         }
     }, {
         breakpoint: 480,
