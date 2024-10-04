@@ -376,9 +376,9 @@ p {
   :root {
     --fs26: 20px;
     --fs14: 12px;
-    --fs56: 30px;
-    --fs36: 22px;
-    --fs24: 18px;
+    --fs56: 22px;
+    --fs36: 18px;
+    --fs24: 16px;
     --fs16: 14px;
     --fs32: 24px;
     --fs20: 16px;
@@ -469,8 +469,11 @@ p {
   padding-top: 15px;
 }
 .SocailInner .socailIcon {
+  font-size: var(--fs20);
+  min-width: 20px;
+  width: 20px;
   color: #FFF;
-  font-size: var(--fs14);
+  display: block;
 }
 
 .mainNavbar {
@@ -897,7 +900,6 @@ p {
 }
 .AboutSection .InnerAboutSec .ContentAbout h2 {
   color: #003346;
-  padding: 10px 0px;
   padding-top: 10px;
   padding-bottom: 16px;
   text-align: start;
@@ -3085,6 +3087,29 @@ p {
   }
 }
 @media (max-width: 575.98px) {
+  .topHeader .SocailInner {
+    padding-top: 10px;
+  }
+  .topHeader .SocailInner .socailIcon {
+    font-size: var(--fs12);
+    min-width: fit-content;
+    width: fit-content;
+    color: #FFF;
+  }
+  .AboutSection .InnerAboutSec .ContentAbout h2 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  .navbar .navbar-collapse {
+    padding: 10px 15px 24px 15px;
+    width: 240px;
+  }
+  .AboutSection .InnerAboutSec .ContentAbout h3 {
+    padding-bottom: 10px;
+  }
+  .mainNavbar .navbar-nav .nav-item {
+    padding-bottom: 15px;
+  }
   .WorkigHrs .InnerWorkingHrs {
     gap: 30px;
   }
@@ -3359,6 +3384,7 @@ p {
     padding-top: 15px;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
   }
   .logoSlider .logoImg {
     height: 90px;

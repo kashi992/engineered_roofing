@@ -93,8 +93,11 @@
     gap: 10px;
     padding-top: 15px;
     .socailIcon{
+        font-size: var(--fs20);
+        min-width: 20px;
+        width: 20px;
         color: $WhiteClr;
-        font-size: var(--fs14);
+        display: block;
     }
 }
 .mainNavbar {
@@ -618,7 +621,6 @@
             }
             h2 {
                 color: $secondaryBlack;
-                padding: 10px 0px;
                 padding-top: 10px;
                 padding-bottom: 16px;
                 text-align: start;
