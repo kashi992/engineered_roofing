@@ -57,6 +57,33 @@
 }
 
 @media screen and (max-width: 1370px) {
+    .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox {
+        gap: 12px;
+    }
+    .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox:last-of-type {
+        padding-top: 80px;
+    }
+    .AboutSection .AboutW50 {
+        width: calc(50% - 15px);
+    }
+    .AboutSection .AboutW40 {
+        width: calc(50% - 15px);
+    }
+    .AboutSection.CoreFeaturs .AboutImg.ChoseBox {
+        gap: 12px;
+    }
+    .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox .reasonBox {
+        padding: 16px;
+    }
+    
+    
+    .AboutSection .InnerAboutSec .ContentAbout h2 {
+        padding-top: 10px;
+        padding-bottom: 16px;
+    }
+    .AboutSection.CoreFeaturs .ContentAbout p {
+        padding-bottom: 30px;
+    }
     .OurProducts .InnerProductBox .ProductCaption {
         padding: 35px;
     }
