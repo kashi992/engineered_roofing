@@ -15,7 +15,7 @@
 
     .mainNavbar .navbar-nav {
         height: 80px;
-        max-width: 640px;
+        max-width: 790px;
     }
 
 
@@ -35,9 +35,17 @@
     }
 }
 
-@media screen and (max-width: 1560px) {}
+@media screen and (max-width: 1560px) {
+    .AboutSection .AboutImg {
+        height: 540px;
+    }
+}
 
 @media screen and (max-width: 1470px) {
+    .mainNavbar .navbar-nav {
+        max-width: 730px;
+    }
+
     .mainNavbar .navbar-nav .nav-item {
         padding: 0px 15px;
     }
@@ -54,7 +62,7 @@
     }
 
     .mainNavbar .navbar-nav {
-        max-width: 600px;
+        max-width: 700px;
     }
 
 
@@ -106,6 +114,9 @@
 // Ipad pro 
 // `xl` applies to large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
+    .mainNavbar .navbar-nav {
+        max-width: 575px;
+    }
     .mainNavbar .navbar-brand {
         height: 65px;
     }
@@ -124,7 +135,7 @@
 
     .RequestQuote .InnerProgressBar {
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 15px;
     }
 
     .RequestQuote .nav .nav-item {
@@ -230,6 +241,10 @@
         flex-wrap: wrap;
         gap: 20px 0px;
 
+    }
+    .RequestQuote .InnerFillField {
+        width: 100%;
+        justify-content: space-between;
     }
 }
 
@@ -370,7 +385,7 @@
     }
 
     .AboutSection .AboutImg .warrentyBadge {
-        transform: translate(5%, 50%);
+        transform: translate(25%, 50%);
     }
 
     .navbar-toggler {
@@ -647,6 +662,9 @@
 //  mobile 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+    .AboutSection .InnerAboutSec {
+        gap: 35px;
+    }
     .MaterialSec .contentMaterail h4 {
         padding-bottom: 10px;
     }
@@ -888,10 +906,12 @@
     }
 
     .AboutSection .AboutImg .warrentyBadge {
-        width: 110px;
-        height: 110px;
+        width: 90px;
+        height: 90px;
     }
-
+    .AboutSection .AboutImg .warrentyBadge p {
+        font-size: 10px;
+    }
     .AboutSection.CoreFeaturs .AboutImg.ChoseBox .InnerReeasonBox .reasonBox {
         border-radius: 10px;
     }
@@ -905,11 +925,9 @@
     }
 
 
-
     .AboutSection.CoreFeaturs .ContentAbout p {
-        padding: 20px 0;
+        padding: 5px 0px 20px 0px;
     }
-
     .AboutSection.CoreFeaturs .ContentAbout h3 {
         margin-top: 10px;
     }
